@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="projectWithStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Логин" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gSi-AB-6Dk">
+                                <rect key="frame" x="108" y="375" width="177" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Пароль" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EjS-o8-T3n">
+                                <rect key="frame" x="108" y="445" width="177" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yH-n3-4TX">
+                                <rect key="frame" x="49" y="303" width="295" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="gKh-d4-q3V"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Авторизация">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qlv-bd-qBr">
+                                <rect key="frame" x="88" y="71" width="217" height="151"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15A-Oz-7UH">
+                                <rect key="frame" x="80" y="504" width="247" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="2Ob-pH-kWg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="y1b-p7-ChK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Войти">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gSi-AB-6Dk" secondAttribute="trailing" constant="108" id="1Ie-gt-KoE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="15A-Oz-7UH" secondAttribute="trailing" constant="66" id="Ifx-oc-Bf6"/>
+                            <constraint firstItem="15A-Oz-7UH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="JDK-mE-NlU"/>
+                            <constraint firstItem="0yH-n3-4TX" firstAttribute="top" secondItem="qlv-bd-qBr" secondAttribute="bottom" constant="81" id="KSq-SJ-sCW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EjS-o8-T3n" secondAttribute="trailing" constant="108" id="MBR-PG-n5o"/>
+                            <constraint firstItem="0yH-n3-4TX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="303" id="McC-ts-8l8"/>
+                            <constraint firstItem="0yH-n3-4TX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RAV-Ya-6NO"/>
+                            <constraint firstItem="0yH-n3-4TX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="dO4-9Y-Spp"/>
+                            <constraint firstItem="0yH-n3-4TX" firstAttribute="centerX" secondItem="qlv-bd-qBr" secondAttribute="centerX" id="f9X-qX-05y"/>
+                            <constraint firstItem="gSi-AB-6Dk" firstAttribute="top" secondItem="0yH-n3-4TX" secondAttribute="bottom" constant="36" id="fRD-0f-yIX"/>
+                            <constraint firstItem="EjS-o8-T3n" firstAttribute="top" secondItem="gSi-AB-6Dk" secondAttribute="bottom" constant="36" id="hNa-9u-2nq"/>
+                            <constraint firstItem="EjS-o8-T3n" firstAttribute="top" secondItem="gSi-AB-6Dk" secondAttribute="bottom" constant="36" id="jBx-Me-LLU"/>
+                            <constraint firstItem="qlv-bd-qBr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="jrI-sF-PVn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="15A-Oz-7UH" secondAttribute="bottom" constant="278" id="ngo-SW-aG8"/>
+                            <constraint firstItem="EjS-o8-T3n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="o0Y-D6-hjx"/>
+                            <constraint firstItem="qlv-bd-qBr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="sbV-op-5SR"/>
+                            <constraint firstItem="gSi-AB-6Dk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="uKo-u4-W9x"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
