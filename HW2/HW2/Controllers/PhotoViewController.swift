@@ -16,8 +16,12 @@ class PhotoViewController: UICollectionViewController {
         collectionView.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
     }
     
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        2
+    }
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        6
+        3
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
